@@ -1,0 +1,4 @@
+Denalmo north=Asnu east=Dinexe
+Asnu south=Denalmo east=Esmosno
+Esmosno south=Dinexe west=Asnu
+Dinexe north=Esmosno west=Denalmo
