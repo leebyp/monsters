@@ -85,7 +85,7 @@ describe('Monsters methods:', function () {
       Object.keys(monsters).should.have.length(0);
     });
 
-    xit('should destroy location at of fighting monsters', function () {
+    it('should destroy location of fighting monsters', function () {
       Object.keys(locations).should.have.length(3);
     });
 
