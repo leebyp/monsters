@@ -1,8 +1,8 @@
 /*jshint indent: 2*/
 'use strict';
 
-var Locations = require('./locations');
-var Monsters = require('./monsters');
+var Locations = require('./lib/locations');
+var Monsters = require('./lib/monsters');
 
 var monstersCount = process.argv[2];
 
