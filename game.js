@@ -1,6 +1,7 @@
 /*jshint indent: 2*/
 'use strict';
 
+var Utility = require('./lib/utility');
 var Locations = require('./lib/locations');
 var Monsters = require('./lib/monsters');
 
@@ -23,4 +24,4 @@ while (round < 10000 && Object.keys(monsters).length) {
   round++;
 }
 
-console.log(Locations.log(locations));
+Utility.output('map_end.txt', Locations.log(locations));
