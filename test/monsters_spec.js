@@ -89,10 +89,9 @@ describe('Monsters methods:', function () {
       Object.keys(locations).should.have.length(3);
     });
 
-    xit('should destroy paths to destroyed location', function () {
+    it('should destroy paths to destroyed location', function () {
       Object.keys(locations.Asnu).should.have.length(1);
       Object.keys(locations.Dinexe).should.have.length(1);
-      Object.keys(locations.Denalmo).should.have.length(2);
       Object.keys(locations.Esmosno).should.have.length(2);
     });
 
