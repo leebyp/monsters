@@ -18,3 +18,13 @@ for (var i=0; i<locationsArray.length; i++) {
     individualLocation[locationLinks[j]] = locationLinks[j+1];
   }
 }
+
+// create monsters at random locations with temporary names
+
+var monsters = {};
+for (var i=1; i<=monsterCount; i++) {
+  monsters[i] = {};
+  var locationNames = Object.keys(locations);
+  var randomLocationIndex = Math.floor(Math.random() * locationNames.length);
+  monsters[i].location = locationNames[randomLocationIndex];
+}
