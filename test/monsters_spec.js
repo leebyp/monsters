@@ -85,11 +85,11 @@ describe('Monsters methods:', function () {
       Object.keys(monsters).should.have.length(0);
     });
 
-    it('should destroy location at of fighting monsters', function () {
+    xit('should destroy location at of fighting monsters', function () {
       Object.keys(locations).should.have.length(3);
     });
 
-    it('should destroy paths to destroyed location', function () {
+    xit('should destroy paths to destroyed location', function () {
       Object.keys(locations.Asnu).should.have.length(1);
       Object.keys(locations.Dinexe).should.have.length(1);
       Object.keys(locations.Denalmo).should.have.length(2);
