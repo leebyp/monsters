@@ -92,8 +92,13 @@ var locations = createLocations('map.txt');
 // create monsters at random locations with temporary names
 var monsters = createMonsters(monstersCount, locations);
 
-// move each monster
-moveMonsters(monsters, locations);
-
 // fight monsters at same location
 fightMonsters(monsters, locations);
+
+var round = 0;
+while (round < 10000 && Object.keys(monsters).length) {
+  // move each monster and fight monsters
+  moveMonsters(monsters, locations);
+  fightMonsters(monsters, locations);
+  round++;
+}
