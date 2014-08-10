@@ -22,6 +22,19 @@ var createLocations = function (mapFile) {
   return locations;
 };
 
+var logLocations = function (locations) {
+  var result = '';
+  for (var location in locations) {
+    result += location;
+    var directions = Object.keys(locations[location]);
+    for (var i=0; i<directions.length; i++) {
+      result += ' ' + directions[i] + '=' + locations[location][directions[i]];
+    }
+    result += '\n';
+  }
+  return result;
+};
+
 var createMonsters = function (monstersCount, locations) {
   var monsters = {};
   for (var i=1; i<=monstersCount; i++) {
@@ -102,3 +115,5 @@ while (round < 10000 && Object.keys(monsters).length) {
   fightMonsters(monsters, locations);
   round++;
 }
+
+console.log(logLocations(locations));
